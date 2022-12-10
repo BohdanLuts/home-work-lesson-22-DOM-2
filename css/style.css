@@ -1,0 +1,68 @@
+:root {
+  --mainColourLight: white;
+  --mainColourGrey: grey;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.newsList {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.newsListItem {
+  border: 1px solid rgb(176, 176, 176);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.title {
+  position: relative;
+  padding: 50px 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  background: var(--mainColourLight);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--mainColourLight);
+}
+
+.options {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 15px;
+  color: var(--mainColourLight);
+}
+.like,
+.removeNews {
+  border: 1px solid var(--mainColourLight);
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 5px;
+}
+.likeTrue {
+  border: 1px solid var(--mainColourLight);
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 5px;
+  color: red;
+}
+.category {
+  text-transform: uppercase;
+  color: var(--mainColourGrey);
+}
+
+.date {
+  color: var(--mainColourGrey);
+  text-align: right;
+}
+
+.body,
+.category,
+.date,
+.newsListItem {
+  margin: 15px;
+}
