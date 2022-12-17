@@ -50,7 +50,7 @@ news.forEach((n) => {
 
   const newsTitleElem = document.createElement("div");
   newsTitleElem.classList.add("title");
-  newsTitleElem.style.background = `url(${n.headerBgSrc})`;
+  newsTitleElem.style.backgroundImage = `url(${n.headerBgSrc})`;
   newsListItemElem.append(newsTitleElem);
 
   const newsH2Elem = document.createElement("h2");
